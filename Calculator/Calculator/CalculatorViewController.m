@@ -43,6 +43,12 @@
      self.userIsInTheMiddleOfEnteringANumber = NO;
 }
 
+- (IBAction)decimalPressed:(UIButton *)sender
+{
+    if ([self.display.text rangeOfString:@"."].location == NSNotFound)
+        [self digitPressed:sender];
+}
+
 - (IBAction)operationPressed:(UIButton *)sender
 {
     if (self.userIsInTheMiddleOfEnteringANumber) {
