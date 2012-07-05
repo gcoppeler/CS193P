@@ -50,6 +50,14 @@
     } else if ([operation isEqualToString:@"/"]) {
         double divisor = [self popOperand];
         if (divisor) result = [self popOperand] / divisor;
+    } else if ([operation isEqualToString:@"sin"]) {
+        result = round(sin([self popOperand]*(M_PI/180))*1000.0)/1000.0;
+    } else if ([operation isEqualToString:@"cos"]) {
+        result = round(cos([self popOperand]*(M_PI/180))*1000.0)/1000.0;
+    } else if ([operation isEqualToString:@"sqrt"]) {
+        result = sqrt([self popOperand]);
+    } else if ([operation isEqualToString:@"pi"]) {
+        result = M_PI;
     }
     
     [self pushOperand:result];
