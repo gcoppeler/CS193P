@@ -320,11 +320,19 @@
                                     <action selector="operationPressed:" destination="2" eventType="touchUpInside" id="NgE-zX-d2w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="aac-7D-as2">
+                                <rect key="frame" x="20" y="0.0" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="display" destination="FJK-En-g13" id="79f-sW-L92"/>
+                        <outlet property="historyDisplay" destination="aac-7D-as2" id="Ach-1p-nqX"/>
                     </connections>
                 </viewController>
             </objects>
