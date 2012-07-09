@@ -64,4 +64,11 @@
     self.historyDisplay.text = [self.historyDisplay.text stringByAppendingString:@" "];
 }
 
+- (IBAction)clearPressed
+{
+    self.display.text = [NSString stringWithFormat:@""];
+    self.historyDisplay.text = [NSString stringWithFormat:@""];
+    [self.brain clearOperandStack];
+}
+
 @end
